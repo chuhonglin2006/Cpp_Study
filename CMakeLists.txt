@@ -9,7 +9,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # 例如 cmake-build-debug/exe
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/exe)
 
-# 多配置生成器(如 Visual Studio)会自动再加一层 Debug/Release 子目录,
 # 下面三行强制取消,保证 exe 直接在 exe 文件夹下
 foreach(OUTPUTCONFIG ${CMAKE_CONFIGURATION_TYPES})
     string(TOUPPER ${OUTPUTCONFIG} OUTPUTCONFIG_UPPER)
