@@ -26,7 +26,7 @@ int main() {
 
 
 	// 计算数组长度
-	int length = size(b);
+	size_t length = size(b);
 	int len = sizeof(b) / sizeof(b[0]);
 	cout << "数组b长度为:" << len << endl;
 	cout << "数组b长度为:" << length << endl;

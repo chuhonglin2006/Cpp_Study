@@ -10,7 +10,7 @@ int main() {
 	#define Pi 3.14159 // 宏常量 预处理阶段的文本替换 没有类型 不受作用域限制
 
 	constexpr int N = 10; // constexpr常量
-	// const的值在运行期间才能确定 而constexpr在编译期间就能算出来
+	// const的初始值可以来自运行时 constexpr必须在编译期算出
 
 	return 0;
 }

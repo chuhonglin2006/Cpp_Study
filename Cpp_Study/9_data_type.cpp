@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include <string>
+#include <iomanip>
 
 // 数据类型
 
@@ -17,6 +18,7 @@ int main() {
 	unsigned int u = 400000000U; // 无符号整形
 	cout << sizeof(short) << " " << sizeof(int) << " "
 	 << sizeof(long) << " " << sizeof(long long) << endl;
+	// sizeof(long) 在 Windows 下是 4，在 Linux/macOS 64 位下是 8
 
 
 	// 字符型
@@ -53,13 +55,23 @@ int main() {
 	double a = 0.1 + 0.2;
 	cout << (a == 0.3) << endl;
 
+	// 浮点数的精度控制
+	double pi = 3.14159265;
+	cout << setprecision(3) << pi << endl; // 保留3位有效数字 四舍五入
+	cout << setprecision(2) << 1234.5678 << endl; // 位数不够时改用科学计数
+	cout << setprecision(10) << 1.5 << endl; // 末尾的 0 不补
+
+	cout << fixed << pi << endl; // 让浮点数以定点小数形式输出,不使用科学计数法 默认保留 6 位小数
+
+	cout << fixed << setprecision(2) << pi << endl; // fixed + setprecision(n) 结果会四舍五入,位数不够会补0
+
 
 	// 内置类型 String
 	string str = "Hello";
 	str += " C++"; // 可以对string后面追加内容
 	cout << str << endl;
 	cout << str.length() << endl; // 获取string长度
-	cout << str.size() << endl; // 获取string占用大小
+	cout << str.size() << endl; // 获取string长度
 
 	return 0;
 }

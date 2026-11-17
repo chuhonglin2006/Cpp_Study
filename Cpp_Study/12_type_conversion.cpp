@@ -8,7 +8,7 @@ int main() {
 
 	// 隐式转换 : 自动类型转换
 	// 不同类型混合运算式 会向 更宽 的类型转换 大致顺序是:
-	// int -> long -> long long -> float -> double -> long double
+	// int → unsigned → long → long long → float → double → long double
 	int  a = 3;
 	double b = 2.5;
 	cout << a + b << endl; // a先被转换为double
@@ -28,7 +28,7 @@ int main() {
 	// 有符号与无符号混合 : 有符号数会被转换为无符号数
 	int q = -1;
 	unsigned int v = 1;
-	cout << (q < v) << endl; // 因为 -1 被转换未来一个很大的整数 以不要拿有符号数和无符号数直接比较
+	cout << (q < v) << endl; // 因为 -1 被转换为一个很大的整数 以不要拿有符号数和无符号数直接比较
 
 
 

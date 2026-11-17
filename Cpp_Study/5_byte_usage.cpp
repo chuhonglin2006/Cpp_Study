@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 // 在计算机中每种不同类型的数据占用的大小也不同
@@ -16,7 +17,6 @@ int main() {
 
 	cout << "int占用:" << sizeof(a) << "字节" << endl;
 	cout << "double占用:" << sizeof(b) << "字节" << endl;
-	cout << "string占用:" << size(c) << "字节" << endl; // 这里根据字符串长度、中英文而改变
 	cout << "char占用:" << sizeof(d) << "字节" << endl;
 
 
