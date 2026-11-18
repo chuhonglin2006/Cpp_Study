@@ -59,5 +59,32 @@ int main() {
 	cout << (number_ > number__ or number_ > number___) << endl;;
 	cout << (not (number_ > number__)) << endl;;
 
+
+	// 三目运算符 条件表达式 ? 表达式1 : 表达式2
+	// 条件为真，结果是表达式1；条件为假，结果是表达式2。它是 if-else 的表达式版本，有返回值。
+	int h = 5,j = 8;
+	int max = (h > j) ? h : j;
+
+
+	// 位运算符 位运算直接对整数的二进制位进行操作
+	int r = 12;
+	int u = 8;
+	// 按位与&  a 和 b 的二进制中、处在同一位置的那两个比特都是1结果才是1
+	int result = r & u;
+	cout << result << endl;
+
+	// 按位或| 有一位是1结果就是1
+	int result_2 = r | u;
+	cout << result_2 << endl;
+
+	// 按位或^ 两位结果不同为1 相同为0
+	int result_3  = r ^ u;
+	cout << result_3 << endl;
+
+	// 按位取反 ~ 0变1 1变0
+	int result_4 = ~ r;
+	cout << result_4 << endl;
+
+
 	return 0;
 }
