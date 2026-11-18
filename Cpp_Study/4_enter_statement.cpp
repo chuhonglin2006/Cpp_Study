@@ -28,24 +28,24 @@ int main() {
 	 */
 
 	// cin >> n 只读走数字，换行符留在缓冲区，下一个 getline 会直接读到一个空行
-	int n;string line;
-	cin >> n;
-	cin >> ws; // 跳过前导空白 可以解决这个问题
-	getline(cin,line);
-	cout << n << " " << line << endl;
+	// int n;string line;
+	// cin >> n;
+	// cin >> ws; // 跳过前导空白 可以解决这个问题
+	// getline(cin,line);
+	// cout << n << " " << line << endl;
 
 
 	// 读取单个字符
-	char c; char d;
-	d = cin.get(); // 不跳过空白，空格和换行也会读到
-	cin >> c; // 跳过空白，读第一个非空白字符
-	cout << c << " " << d << endl;
-
-	// cin.get()也能返回int 用来判断EOF
-	int ch;
-	while ((ch = cin.get()) != EOF) {
-		cout.put(ch); // 输出一个字符
-	}
+	// char c; char d;
+	// d = cin.get(); // 不跳过空白，空格和换行也会读到
+	// cin >> c; // 跳过空白，读第一个非空白字符
+	// cout << c << " " << d << endl;
+	//
+	// // cin.get()也能返回int 用来判断EOF
+	// int ch;
+	// while ((ch = cin.get()) != EOF) {
+	// 	cout.put(ch); // 输出一个字符
+	// }
 
 
 	// 检查输入是否成功

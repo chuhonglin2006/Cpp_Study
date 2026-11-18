@@ -11,10 +11,10 @@ void print_info() {
 
 // 2.编写一入C++程序它要求用户输入一个以longs为单位的距离，然后将它转换为码
 void change_long() {
-	long longs;
+	double longs;
 	cout << "请输入long的值:";
 	cin >> longs;
-	long result = longs / 220;
+	double result = longs / 220;
 	cout << "转换结果:" << result << endl;
 }
 

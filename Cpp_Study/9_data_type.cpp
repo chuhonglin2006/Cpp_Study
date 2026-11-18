@@ -7,15 +7,15 @@ using namespace std;
 
 
 int main() {
-	// C++中数据基本类型分为: 整形、字符型、布尔型、浮点型
+	// C++中数据基本类型分为: 整型、字符型、布尔型、浮点型
 
 
-	// 整形
-	short s = 100; // 短整形
-	int i = 10000; // 整形 最常用
-	long l = 100000L; // 长整形
-	long long ll = 1000000000; // 长长整形
-	unsigned int u = 400000000U; // 无符号整形
+	// 整型
+	short s = 100; // 短整型
+	int i = 10000; // 整型 最常用
+	long l = 100000L; // 长整型
+	long long ll = 1000000000; // 长长整型
+	unsigned int u = 400000000U; // 无符号整型
 	cout << sizeof(short) << " " << sizeof(int) << " "
 	 << sizeof(long) << " " << sizeof(long long) << endl;
 	// sizeof(long) 在 Windows 下是 4，在 Linux/macOS 64 位下是 8

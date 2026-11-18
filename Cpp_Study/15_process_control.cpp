@@ -50,5 +50,23 @@ int main() {
 	// 忘写 break 会 穿透,继续执行下一个 case
 	// default 可选,处理没有匹配的情况
 	// case 中如果要定义变量,需要加花括号
+
+
+	// go to语句 : 与条件跳转代码
+	// go to 标记 : 执行到goto 时直接跳到标记
+
+	cout << "1" << endl;
+	cout << "2" << endl;
+
+	goto FLAG; // 直接跳转到标记
+
+	cout << "3" << endl;
+	cout << "4" << endl;
+
+	FLAG:
+
+	cout << "5" << endl;
+
+
 	return 0;
 }

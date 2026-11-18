@@ -38,7 +38,7 @@ int main() {
 	int y = 10;
 	y += 5; // 等同于 y = y + 5
 	y -= 3; // 等同于 y = y - 3
-	y *= 2; // 等同于 y = y * 3
+	y *= 2; // 等同于 y = y * 2
 	cout << y << endl;
 
 
@@ -77,7 +77,7 @@ int main() {
 	int result_2 = r | u;
 	cout << result_2 << endl;
 
-	// 按位或^ 两位结果不同为1 相同为0
+	// 按位异或^ 两位结果不同为1 相同为0
 	int result_3  = r ^ u;
 	cout << result_3 << endl;
 
