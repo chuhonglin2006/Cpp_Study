@@ -12,7 +12,7 @@ using namespace std;
  */
 
 int main() {
-	// new与delete 单个对象
+	// new与delete
 	int *p = new int; // 分配 未初始化
 	int *q = new int(10); // 分配并初始化为10
 
@@ -20,7 +20,28 @@ int main() {
 	*q = 100; // 修改q的值
 
 	delete q; // 释放
+	delete p;
 	q = nullptr; // 防止悬空指针
+	p = nullptr;
+
+
+	// 动态数组
+	int *arr = new int[5]; // 申请一个int类型 长度为5的数组
+
+	delete[] arr; // 释放动态数组 delete后面要加[]
+
+	arr = nullptr; // 置空
+
+	int *a = new int[5]{1,2,3,4,5}; // 动态数组初始化 大括号中不填元素初始化为0
+
+	int length = 5; // new返回指针 丢失长度信息
+	for (int index = 0;index < length;index++) {
+		cout << a[index] << " ";
+	}
+
+	delete[] a;
+	a = nullptr;
+
 
 
 	return 0;

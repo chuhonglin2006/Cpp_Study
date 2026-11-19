@@ -13,11 +13,11 @@ int main() {
 	mt19937 gen(rd()); // 梅森旋转算法引擎
 
 
-	uniform_int_distribution<int> a(1, 1000); // 生成1~1000内的随机数
+	uniform_int_distribution a(1, 1000); // 生成1~1000内的随机数
 	cout << a(gen) << endl;
 
 
-	uniform_real_distribution<double> b(0.0,1.0); // 生成范围内的浮点数
+	uniform_real_distribution b(0.0,1.0); // 生成范围内的浮点数
 	cout << b(gen) << endl;
 
 
