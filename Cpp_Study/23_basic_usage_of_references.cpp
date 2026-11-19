@@ -10,7 +10,7 @@ int main() {
 	int number = 100;
 
 	// 创建引用
-	int &ref = number;
+	int &ref = number; // 引用必须初始化 而且只能绑定一次
 
 	cout << number << " " << ref << endl;
 
