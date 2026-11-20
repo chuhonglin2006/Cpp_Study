@@ -21,7 +21,7 @@ int main() {
 	cout << str_1.size() << endl;
 	// 这里的长度是字符串中存储的char数量对于UTF-8中文字符串一个汉字通常占3个字节因此不一定等于汉字个数
 	string str_cn = "你好";
-	cout << str_cn.length() << endl;
+	cout << str_cn.length() << " " <<  str_cn.size() << endl;;
 
 	// 判断字符串是否为空
 	if (str_2.empty()) {  //  empty() 返回值是 bool 类型
@@ -78,7 +78,7 @@ int main() {
 	// 字符查找
 	cout << str_3.find('l') << endl; // 返回从左到右第一个下标
 	// 查找不存在的内容
-	size_t pos = str_3.find("C++");
+	size_t pos = str_3.find("C++"); // size_t : 无符号整数类型
 	if (pos == string::npos) { // string::npos 表示没有找到
 		cout << "未找到" << endl;
 	}
@@ -101,9 +101,30 @@ int main() {
 	str_4.replace(6,3,"Python");// 起始位置 替换长度 替换内容
 	cout << str_4 << endl;
 
+	// 字符串的比较
+	// 字符串可以直接使用比较运算符 比较的是第一个字符的编码值 如果相同 就比较下一位
+	string str_5 = "Hello",str_6 = "Hello";
+	cout << (str_5 < str_6) << endl;
+
+	// 遍历字符串
+	string str_7 = "Hello World";
+	for (char c : str_7) {
+		cout << c << " ";
+	}
 
 
+	// 其它  C++ 标准库的 <cctype> 头文件提供了一些字符处理函数
 
-
+	/*    函数	         作用
+		isalpha(c)	判断是否为英文字母
+		isdigit(c)	判断是否为数字
+		isalnum(c)	判断是否为字母或数字
+		isspace(c)	判断是否为空白字符
+		islower(c)	判断是否为小写字母
+		isupper(c)	判断是否为大写字母
+		tolower(c)	转换为小写字母
+		toupper(c)	转换为大写字母
+	 *
+	 */
 	return 0;
 }
