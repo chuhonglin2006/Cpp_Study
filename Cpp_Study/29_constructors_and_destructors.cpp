@@ -14,7 +14,7 @@ public:
 		age = 0;
 	}
 
-	// 带参数的析构函数
+	// 带参数的构造函数
 	Student(string n,int a) {
 		name = n;
 		age = a;
