@@ -22,7 +22,7 @@ public:
 	Person (const Person &p) {
 		this->age = p.age;
 		this->height = new int(*p.height); // 重新申请一块空间
-		// 深拷贝就是重新申请一块内存空间 赋值过期
+		// 深拷贝就是重新申请一块内存空间 赋值过去
 		// 浅拷贝就是普通的赋值
 
 		cout << "Person拷贝构造函数调用" << endl;
