@@ -47,7 +47,7 @@ int* func_5() {
 
 void func_6() {
 	// 3.多个指针指向同一块内存
-	int*a = new int(10);
+	int* a = new int(10);
 	int* b = a;
 	delete a;
 	a = nullptr;
