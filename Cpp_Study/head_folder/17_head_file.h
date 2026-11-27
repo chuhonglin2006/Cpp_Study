@@ -1,7 +1,0 @@
-#ifndef CPP_STUDY_PROJECT_17_HEAD_FILE_H
-#define CPP_STUDY_PROJECT_17_HEAD_FILE_H
-
-void function(); // 声明函数
-
-
-#endif //CPP_STUDY_PROJECT_17_HEAD_FILE_H
